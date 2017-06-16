@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bug FIxing</title>
+	<script>
+	function interactionHandle() {
+	  var onlineShop = document.getElementsByTagName('a');
+	  for (var i = 0; i < onlineShop.length; i++) {
+	    onlineShop[i].onclick = function() {
+	      alert(i);
+	      return false;
+	    }
+	 }
+	</script>
+</head>
+<body>
+
+<p>Can you fix all bugs in interactionHandle function? <br> And secondly,
+In the alert, display anchor's index instead of link</p>
+
+  I am happy to purchase online from the following websites:<br/>
+  <a href="www.flipkart.com">Flipkart</a><br/>
+  <a href="www.snapdeal.com">Snapdeal</a><br/>
+  <a href="www.shopclues.com">Shopclues</a><br/>
+</body>
+</html>
